@@ -1,0 +1,22 @@
+
+<div style="text-align: center;">
+
+    <div *ngFor = 'let  login of datosLogin'>
+        <img [src]="login.picture.thumbnail" >
+        <div>
+            <h2> Nombre: {{ login.name.first }} {{ login.name.last }}</h2>
+            <h4> 
+                Mr: {{ login.name.title}} <br>Genero: {{login.gender}} <br> Ciudad: {{login.location.city}}
+                <br>Ubicacion:{{login.location.street.name}} {{login.location.street.number}}
+                <br> Codigo Postal: {{login.location.postcode}}
+                <br> Email: {{login.email}} <br> Telefono: {{login.phone}}
+            
+            </h4>
+        </div>
+        
+
+    </div>
+
+
+
+</div>

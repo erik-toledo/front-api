@@ -1,0 +1,20 @@
+
+
+
+<div style="text-align: center;">
+    <div *ngFor = 'let dash of datosDashboard'>
+        <img [src]="dash.picture.thumbnail" >
+        <h2> Nombre: {{ dash.name.first }} {{ dash.name.last }}</h2>
+        <h4> 
+
+            <br>Genero: {{dash.gender}} <br> Mr: {{ dash.name.title}} <br> Ciudad: {{dash.location.city}}
+            <br>Ubicacion:{{dash.location.street.name}} {{dash.location.street.number}}
+            <br> Codigo Postal: {{dash.location.postcode}}
+            <br> Email: {{dash.email}} <br> Telefono: {{dash.phone}}
+            <br> Registro: Hace {{dash.registered.age}} años Fecha: {{dash.registered.date}}
+            
+        
+        </h4>
+    </div>
+
+</div>

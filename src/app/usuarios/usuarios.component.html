@@ -1,0 +1,17 @@
+<div style="text-align: center;">
+    <div *ngFor = 'let user of datosUsuarios'>
+        <img [src]="user.picture.thumbnail" >
+        <h2> Nombre: {{ user.name.first }} {{ user.name.last }}</h2>
+        <h4> 
+
+            <br>Genero: {{user.gender}} <br> Mr: {{ user.name.title}} <br> Ciudad: {{user.location.city}}
+            <br>Ubicacion:{{user.location.street.name}} {{user.location.street.number}}
+            <br> Codigo Postal: {{user.location.postcode}}
+            <br> Email: {{user.email}} <br> Telefono: {{user.phone}}
+            <br> Registro: Hace {{user.registered.age}} años Fecha: {{user.registered.date}} 
+            <br> Informacion:{{informacion.seed}}
+        </h4>
+    </div>
+    
+
+</div>
